@@ -10,10 +10,9 @@
 
 var toggle_seal = jQuery(function($) {
   return function() {
-      freeculture = true;
-      sealimage = $("#freecultureseal");
+      customselected = false;
 
-      if (!$('#instconf_noncommercial_container input').first().prop('checked')) {
+      if (!$('#instconf_size_container input').first().prop('checked')) {
           freeculture = false;
       }
 
